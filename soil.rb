@@ -1,4 +1,4 @@
-cask "my-app" do
+cask "soil" do
     version "1.0.0"
     sha256 "250f7e9e9c4c7f93cbba8644988f0bf2cb7d93568d799aed789ffd63b9385916"
   
