@@ -7,7 +7,6 @@ class Soil < Formula
     license "CC-BY-ND-4.0"
   
     def install
-      libexec.install Dir["*"]
-      bin.install_symlink libexec/"soil"
+      bin.install "soil"
     end
   end
