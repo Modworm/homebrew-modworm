@@ -1,12 +1,13 @@
 class Soil < Formula
     desc "a simple app for reading from modbus servers"
     homepage "https://modworm.com"
-    url "https://modworm.com/soil_v1.0.0.zip"
+    url "http://localhost:5173/soil_v2.0.0.zip"
     version "1.0.0"
-    sha256 "94697ed4f331f688893e619d2d765306eca06d2fa25cae60068e2c45996fdd3e"
+    sha256 "802e97c0c8d638302e8a5a28d1a72ab21bd300f65ba0cd8f6ce24efe19afe025"
     license "CC-BY-ND-4.0"
   
     def install
-      bin.install "soil"
+      libexec.install Dir["*"] # This copies all files in the zip to libexec
+      bin.write_exec_script (libexec/"soil") # This creates a wrapper in bin that calls your executable
     end
   end
