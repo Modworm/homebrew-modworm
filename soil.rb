@@ -3,7 +3,7 @@ class Soil < Formula
     homepage "https://modworm.com"
     url "http://localhost:5173/soil_v2.0.0.zip"
     version "2.0.0"
-    sha256 "c6932fb3e30046a5f20fe28db97c5fac58b01273537ae92342bff97d0924c407"
+    sha256 "a5ddd90b4bf492b188cfb5bd500e13573ab3d9c92d526ef889867408ebea7fdd"
     license "CC-BY-ND-4.0"
   
     def install
